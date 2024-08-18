@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/d709f1b460.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
@@ -18,16 +26,44 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'dark1': '#1C1C1C',
+                        'dark2': '#494949',
+                        'dark3': '#777777',
+                        'dark4': '#5D5A6F',
+                        'dark7': '#F4F4F4',
+                        'white': '#ffffff',
+                        'orange': '#FFC850',
                     }
-                }
+                },
             }
         }
     </script>
 </head>
 
-<body>
-
+<body class="manrope-font">
+    <!-- Main Section -->
+    <main class="max-w-screen-xl mx-auto px-8 lg:px-20">
+        <!-- Hero section -->
+        <div class="flex flex-col md:flex-row justify-between pt-12">
+            <div class="mb-16">
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-dark1">It's good<br>tea time at The <br>Tea House</h1>
+                <p class="w-9/12 text-md lg:text-lg text-dark3 font-medium my-6 lg:my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="text-xl font-bold p-4 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white">Explore More &nbsp;<i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <div class="mb-20 lg:mt-16  border-dashed border-2 relative pb-24 lg:pb-10">
+                <img class="w-full" src="images/banner.png" alt="Banner">
+                <div class="w-50 lg:w-60 bg-white flex items-center gap-6 shadow-lg p-4 rounded-lg absolute bottom-4 left-16 lg:bottom-6 lg:left-16">
+                    <div>
+                        <i class="fa-solid fa-star text-orange text-3xl lg:text-4xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-dark1 text-2xl lg:text-3xl font-bold">5.00</h3>
+                        <p class="text-dark3 text-sm lg:text-md font-black">Trust Pilot Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
